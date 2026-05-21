@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <nav>
+
+      <div class="logo">Travel Explorer</div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#places">Places</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero" id="home">
+
+    <div class="overlay"></div>
+
+    <div class="content">
+
+      <h1>Explore The Beauty Of The World</h1>
+
+      <p>
+        Discover breathtaking destinations, luxury vacations,
+        adventurous journeys, and unforgettable memories
+        with Travel Explorer.
+      </p>
+
+      <div class="btns">
+
+        <button onclick="bookNow()">Book Now</button>
+
+        <button onclick="learnMore()" class="second-btn">
+          Learn More
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PLACES SECTION -->
+
+  <section class="places" id="places">
+
+    <h2>Popular Destinations</h2>
+
+    <div class="cards">
+
+      <!-- Maldives -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Maldives">
+
+        <h3>Maldives</h3>
+
+        <p>
+          Relax in crystal-clear waters and luxurious beach resorts.
+        </p>
+
+        <button onclick="visitPlace('Maldives')">
+          Visit
+        </button>
+
+      </div>
+
+      <!-- Paris -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a" alt="Paris">
+
+        <h3>Paris</h3>
+
+        <p>
+          Explore the romantic streets, iconic Eiffel Tower,
+          stylish cafes, and beautiful night views of Paris.
+        </p>
+
+        <button onclick="visitPlace('Paris')">
+          Visit
+        </button>
+
+      </div>
+
+      <!-- Switzerland -->
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Switzerland">
+
+        <h3>Switzerland</h3>
+
+        <p>
+          Experience snow-covered mountains and scenic landscapes.
+        </p>
+
+        <button onclick="visitPlace('Switzerland')">
+          Visit
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+
+  <section class="about" id="about">
+
+    <h2>Why Choose Us?</h2>
+
+    <p>
+      We provide comfortable, affordable, and memorable travel experiences.
+      Our goal is to help travelers explore the best destinations safely
+      while enjoying premium travel services.
+    </p>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+
+  <section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form onsubmit="submitForm(event)">
+
+      <input type="text" placeholder="Enter Your Name" required>
+
+      <input type="email" placeholder="Enter Your Email" required>
+
+      <textarea placeholder="Enter Your Message"></textarea>
+
+      <button type="submit">
+        Send Message
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 Travel Explorer | All Rights Reserved
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
